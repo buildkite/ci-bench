@@ -19,7 +19,7 @@ jobs:
 
     - name: Download kernel
       run: |
-        ./download-kernel
+        ./download-kernel.sh
 
     - name: Build kernel
       run: |
