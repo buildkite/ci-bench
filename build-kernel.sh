@@ -9,6 +9,3 @@ time ( {
     make defconfig;
     make -j"$(nproc)"; 
 } 2>&3 ) 3>&2 2>compile_time_output.txt
-
-echo "-- clean up"
-make clean
