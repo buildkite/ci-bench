@@ -17,6 +17,10 @@ jobs:
       run: |
         ./record-system-info.sh
 
+    - name: Install dependencies
+      run: |
+        ./install-deps-debian.sh
+
     - name: Download kernel
       run: |
         ./download-kernel.sh
