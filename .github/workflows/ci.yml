@@ -3,9 +3,14 @@ name: Linux kernel build
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+        - 'README.md'
+        - '.buildkite/**'
   pull_request:
     branches: [ "main" ]
-
+    paths-ignore:
+        - 'README.md'
+        - '.buildkite/**'
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -7,10 +7,10 @@ set -e -o pipefail
 echo "-- record system information"
 echo "system information" > system_info.txt
 { 
-    echo "\n-------- UNAME --------n";
+    echo "-------- UNAME --------";
     uname -a; 
-    echo "\n-------- LSCPU --------\n";
+    echo "-------- LSCPU --------";
     lscpu; 
-    echo "\n-------- FREE --------\n";
+    echo "-------- FREE --------";
     free -h; 
 } >> system_info.txt
