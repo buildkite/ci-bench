@@ -9,7 +9,7 @@ steps:
       - "compile_time_output.txt"
       - "system_info.txt"
     agents:
-      queue: "hosted"
+      queue: "linux-graphql-demo-extra-large"
   - label: "Run build steps (medium)"
     commands:
       - ./record-system-info.sh 
